@@ -1,0 +1,99 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: white;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+.sect1{
+  position:relative;
+  min-height: 400px;
+  background-image: url('../images/bg-alaska.jpg');
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+
+}
+.form-container{
+  display:none;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  padding:15px 2%;
+  max-width: 700px;
+  width:100%;
+}
+.custom-title{
+  position:relative;
+}
+.custom-title h2{
+  position:relative;
+  font-size: 28px;
+  color:#777;
+  background-color: white;
+  z-index: 2;
+  display: inline-block;
+  padding-right: 6px;
+}
+.custom-title > div{
+  z-index: 1;
+  position:absolute;
+  width:100%;
+  height: 2px;
+  background-color:#777;
+  top:55px;
+  left:0;
+  
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
