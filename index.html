@@ -282,6 +282,7 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/0.0.11/push.min.js"></script>
   <script>
     $(function(){
       $('#contato').click(function(){
@@ -297,6 +298,27 @@
 
     });
   </script>
+  <!----------notificações push-------------->
+  <script>
+    if(Push.Permission.get()!='granted'){
+      Push.Permission.request();
+    }
+    
+    if(Push.Permission.get()=='granted');
+    Push.create('seja bem vindo ao site!',{    
+      body:'site desenvolvido por Marlon Pereira',
+      icon:'icon.png',
+      timeOut:4000,
+      vibrate:[100,100,100],
+      onClick: function () {
+        window.focus();
+        this.close();
+    }
+
+    })
+  </script>
+
+  
 
   </body>
 </html>
